@@ -1,0 +1,7 @@
+version: '3.8'
+services:
+  discord-extract:
+    build: .
+    volumes:
+      - ./json:/json
+      - ./upload:/upload
