@@ -1,0 +1,14 @@
+image: python:3.8
+
+tasks:
+  - name: Setup Python Environment
+    init: pip install -r requirements.txt
+    command: echo "Environnement Python prêt !"
+
+vscode:
+  extensions:
+    - ms-python.python
+
+ports:
+  - port: 8080
+    onOpen: ignore
